@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-3</title>
+</head>
+
+<body>
+    Find the Index of the First Occurrence in a String<br />
+    -Given two strings str and str1, return the index of the first<br />
+    occurrence of str1 in str, or -1 if str1 is not part of str.
+    <script>
+        let str = "naach basanti oo lala";
+        let str1 = "lala";
+        let findIndex=(str, str1)=>{
+            if (str.includes(str1)) {
+                return str.indexOf(str1);
+            } else {
+                return -1;
+            }
+        }
+        console.log(findIndex(str, str1));
+    </script>
+</body>
+
+</html>

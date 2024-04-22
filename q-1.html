@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-1</title>
+</head>
+<body>
+    O1 Majority Element
+       -Given an array arr of size n,return the majority element..
+       <script>
+          
+        let arr=[11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,5,5,5,5,55,5];
+        let count=0,ele,total,max=1;
+        for(let i=0;i<arr.length;i++){
+            for(let j=0;j<arr.length;j++){
+               if(arr[i]==arr[j]){
+                     count++;
+                     
+               }
+            }
+            if(max<count){
+                max=count;
+                ele=arr[i];
+            }
+            count=0;
+        }
+        console.log(ele,max);
+       </script>
+</body>
+</html>
